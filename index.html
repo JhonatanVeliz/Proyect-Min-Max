@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos MinMax</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+    <div id="elementAfter"></div>
+
+    <header class="header container">
+
+        <nav class="header__nav nav d-flex">
+
+            <div class="nav__container d-flex" id="nav">
+
+                <button type="button" class="btn menu open-menu"><img src="./img/bars.png" alt="barra de navegacion" class="icon__max"></button>
+
+                <a href="#" class="btn btn--exit"><img src="./img/arrow-left.png" alt="exit" class="icon"></a>
+
+                <button type="button" class="btn btn-nav btn-bg btn-principal move"><img src="./img/help.png" alt="ayuda" class="icon__max"></button>
+
+                <button type="button" class="btn btn-nav btn-bg btn-principal btn-retos" id="plus"><img src="./img/plus.png" alt="mas retos" class="icon__max"></button>
+
+                <button type="button" class="btn btn--mode btn-nav btn-bg btn-principal" id="mode"><img src="./img/sun-dark.png" alt="mode"
+                        class="icon__max" id="icon-mode"></button>
+            </div>
+
+            <button type="button" class="btn btn--menu menu"><img src="./img/bars-dark.png" alt="menu"></button>
+
+        </nav>
+
+    </header>
+
+    <main class="main container">
+
+        <h1 class="title" id="title">MinMax</h1>
+
+        <div class="layout">
+
+            <form action="" id="form" class="box-inputs d-flex">
+
+                <div class="item-input item-input--blue btn">
+                    <input type="number" class="btn--input" placeholder="primer valor" id="v-min">
+                </div>
+
+                <div class="item-input item-input--purple btn">
+                    <input type="number" class="btn--input" placeholder="segundo valor" id="v-max">
+                </div>
+
+            </form>
+
+            <div class="box-result d-flex">
+
+                <div class="item-result btn">
+                    <div class="d-flex message-container">
+
+                        <p class="result--message" id="titular">Resultado<span class="m-left"><img src="./img/check.png"
+                                    alt="resultado" class="icon__max"></span></p>
+
+                        <p class="result--message result--message-before" id="result"></p>
+
+                        <span class="delete"><img src="./img/delete.png" alt="borrar" class="icon__max"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="box-extra d-flex">
+
+                <div class="extras-container">
+                    <div class="extra--item">
+                        <button type="button" class="d-flex btn btn--intrucciones move">instrucciones <span><img
+                                    src="./img/copy.png" alt="ayuda" class="icon__max m-left"></span></button>
+                    </div>
+
+                    <div class="extra--item extra--item--retos" id="box-father">
+                        <button type="button" class="d-flex btn btn--mas btn-retos">más retos<span><img
+                                    src="./img/arrow-bottom.png" alt="ayuda" class="icon__max m-left"></span></button>
+
+                        <ul class="list-retos" id="retos">
+                            <li class="link-retos"><a href="https://jhonatanveliz.github.io/Promediar/">Promediar</a>
+                            </li>
+                            <li class="link-retos"><a href="https://jhonatanveliz.github.io/IMC/">IMC</a></li>
+                            <li class="link-retos"><a href="https://jhonatanveliz.github.io/calculadora/">Calculadora</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-ejecutar">
+                    <button type="button" class="btn btn--ejecutar" id="ejecutar">ejecutar</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <aside class="aside" id="aside">
+
+        <div class="box-instrucciones">
+            <h2 class="title title--ligth">Instrucciones</h2>
+            <ol class="aside__info">
+                <li class="aside__text">En el input "Primer Valor" ingresa un número random ( se recomienda que no
+                    supere más de 10 caracteres)</li>
+                <li class="aside__text">En el input "Segundo Valor" ingresa un número random ( se recomienda que no
+                    supere más de 10 caracteres)</li>
+                <li class="aside__text">En la caja de resultado se mostrara la comparación de los números ingresados y
+                    se determinara cual es el número menor, mayor y la suma entre ambos</li>
+            </ol>
+
+            <button type="button" class="btn btn--aside move">Comenzar</button>
+        </div>
+
+    </aside>
+
+    <script src="./js/instrucciones.js"></script>
+    <script src="./js/proyectos-extras.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
